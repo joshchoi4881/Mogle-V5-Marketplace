@@ -1,0 +1,28 @@
+{
+  "name": "mogle-v5-marketplace",
+  "version": "1.0.0",
+  "description": "The marketplace feature of Mogle @ https://mogleinsurance.com/marketplace",
+  "main": "index.js",
+  "scripts": {
+    "prod": "npm run prod --prefix express",
+    "dev": "concurrently \"npm run client\" \"npm run express\"",
+    "client": "npm run start --prefix client",
+    "express": "npm run dev --prefix express"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshchoi4881/Mogle-V5-Marketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshchoi4881/Mogle-V5-Marketplace/issues"
+  },
+  "homepage": "https://github.com/joshchoi4881/Mogle-V5-Marketplace#readme",
+  "dependencies": {
+    "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
